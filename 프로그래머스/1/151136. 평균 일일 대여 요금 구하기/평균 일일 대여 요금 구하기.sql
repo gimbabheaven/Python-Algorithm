@@ -1,0 +1,7 @@
+-- 코드를 입력하세요
+-- 자동차 종류 : SUV
+-- 일일대여요금, 첫째 자리 반올림, AS AVERAGE_FEE
+
+SELECT ROUND(AVG(DAILY_FEE)) AS AVERAGE_FEE
+FROM CAR_RENTAL_COMPANY_CAR
+WHERE CAR_TYPE = 'SUV';
